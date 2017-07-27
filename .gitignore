@@ -1,0 +1,14 @@
+.vs
+*.iobj
+*.ipdb
+*.pdb
+*.txt
+Exe/*
+Exe/**/*
+*.ggb
+*.xlsx
+!/Exe/in.txt
+!/Exe/PathSim.exe
+!/Exe/EField.exe
+!/Exe/BField.exe
+!/Exe/BField2.exe

@@ -1,0 +1,60 @@
+#Configuarion file
+#Particle path simulator using 4th order Runde-Kutta method
+#Line starting with # are ignored.
+
+#Length of one simulation step (s)
+#default 1e-9
+timestep 1e-10
+
+#Ratio of charge to mass of particle (C/kg)
+#default for proton is 95788332
+qperm 95788332
+
+#Frequency of accelerator field (qB/m) (1/s)
+#default 95788332
+#omega 67305671
+omega 170000000
+
+#Number of simulations to run (1)
+#default 10
+symcount 1000
+
+#Number of frames to run each simulation (1)
+#default 1000
+symlen 20000000
+
+#Precision of export (everny nth) (1)
+#default 100
+precision 20
+
+#Position of emitter (m,m,m)
+#default 0 0 0
+emitter 0 0 0
+
+#Random error in emission position (m,m,m)
+#default 0 0 0
+emittererror 0 0 0
+
+#Emission velocity (m/s,m/s,m/s)
+#default 1e6 0 0
+velocity 0 0 0
+
+#kT/m (SI)
+#default (300 * 1.381E-23) / (1.673E-27) = 2 476 389
+
+#Close on end (0 or 1)
+#default 0 (no)
+closeonend 1
+
+Efilename Efield.txt
+Estep 0.0005 0 0.0005
+Estart -0.04 0 0
+Esize 161 1 21
+Bfilename Bfield2.txt
+Bstep 0.0005 0 0.0005
+Bstart 0 0 0
+Bsize 301 1 41
+
+#Log position (0 or 1)
+#default 0 (no)
+logpos 0
